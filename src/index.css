@@ -1,13 +1,144 @@
+/* general rules for the page */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Work Sans", sans-serif;
+}
+.main-page {
+  min-height: 100vh;
+  background-image: url("/src/c11496f4ea2ea385049953d114f20c47.jpeg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.main-page::before {
+  position: fixed;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.333);
+  top: 0;
+  bottom: 0;
+}
+/* end */
+
+/* navbar */
+.navbar {
+  min-height: 89px;
+}
+.navbar span {
+  width: 55px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activated {
+  background-color: #ffffff38;
+  border-left: 2px solid #fff;
+}
+/* end */
+
+/* search bar */
+.in button {
+  position: absolute;
+  right: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 37.6px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  padding-inline: 25px;
+  background-color: #0082ae;
+  top: 0;
+  border: 0;
+}
+/* end */
+
+/* Current Component */
+.current-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.current-layout .left {
+  width: 60%;
+}
+.current-layout h2 {
+  font-size: 54px;
+  width: 75%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 767px) {
+  .current-layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .current-layout .left {
+    width: 100%;
+  }
+  .current-layout h2 {
+    font-size: 54px;
+    width: 100%;
+  }
+  .current-layout .left {
+    text-align: center;
+  }
+  .current-layout img {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-inline: auto;
+  }
 }
+
+.current-layout .first-right {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.current-layout .second-right {
+  font-size: 25px;
+}
+
+.current-layout .second-right span {
+  color: #ffffffb3;
+}
+
+.current-layout .third-right {
+  font-size: 15px;
+}
+/* end */
+
+/* Forecast Component */
+.nav-tabs .nav-link {
+  color: #ffffffc1;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 3px solid #fff;
+}
+
+.t1-head {
+  background-color: #67c6e3;
+  border-top-left-radius: 10px;
+}
+
+.t1-body {
+  background-color: #008eda47;
+}
+
+.t1-foot {
+  background-color: #67c6e381;
+  padding: 8px 15px;
+}
+/* end */

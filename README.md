@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Weather Forecast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+This Weather Forecast App is a web application built with React and TypeScript that allows users to check the current weather and forecast for any location. Users can search for a specific city or allow the app to access their geolocation for weather information.
+
+## Features
+
+- Display current weather conditions including temperature, weather icon, and description.
+- Show hourly forecast for the current day.
+- Provide daily forecast for the next three days.
+- Toggle between Celsius and Fahrenheit temperature units.
+- Responsive design for optimal viewing on various devices.
 
 ## Available Scripts
 
@@ -44,3 +54,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Author
+
+Mohab Essam Hanafy
